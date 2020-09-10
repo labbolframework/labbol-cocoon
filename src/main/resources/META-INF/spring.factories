@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.labbol.cocoon.configuration.CocoonConfiguration,\
+com.labbol.cocoon.configuration.CodeControllerAutoConfiguration,\
+com.labbol.cocoon.configuration.CodeManagerConfiguration
