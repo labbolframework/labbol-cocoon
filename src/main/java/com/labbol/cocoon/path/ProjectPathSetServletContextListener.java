@@ -88,6 +88,9 @@ public class ProjectPathSetServletContextListener implements ServletContextListe
 		LApplication.setProperty("staticResourcesRootPath", staticResourcesRootPath);
 		LApplication.setProperty("thisProjectRootPath", thisProjectRootPath);
 
+		LApplication.setProperty(STATIC_RESOURCES_ROOT_PATH_NAME, staticResourcesRootPath);
+		LApplication.setProperty(THIS_PROJECT_ROOT_PATH_NAME, thisProjectRootPath);
+		
 		servletContext.setAttribute(STATIC_RESOURCES_ROOT_PATH_NAME, staticResourcesRootPath);
 		servletContext.setAttribute(THIS_PROJECT_ROOT_PATH_NAME, thisProjectRootPath);
 	}

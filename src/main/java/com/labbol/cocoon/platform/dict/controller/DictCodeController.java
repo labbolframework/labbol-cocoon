@@ -19,7 +19,7 @@ import com.labbol.core.controller.BaseCoreController;
  * 
  * @since 1.0
  */
-@LoginValidate
+@LoginValidate(validate = false)
 @Controller
 public class DictCodeController extends BaseCoreController {
 

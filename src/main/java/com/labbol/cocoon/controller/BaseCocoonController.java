@@ -69,13 +69,15 @@ public abstract class BaseCocoonController extends BaseCoreController {
 	 * 响应的JSON的页面数据集合参数属性名称
 	 */
 	public static final String JSON_PAGE_ROOT_PROPERTY_NAME = "root";
-	@Resource
-	protected LabbolModelService modelService;
+
 
 	/**
 	 * model 参数前缀
 	 */
 	public static final String MODEL_PARAM_PREFIX = "model.";
+	
+	@Resource
+	protected LabbolModelService modelService;
 
 	/**
 	 * 设置model的排序信息。根据sort请求参数
