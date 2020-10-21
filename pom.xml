@@ -8,8 +8,8 @@
 	<name>labbol-cocoon</name>
 	<url>https://github.com/labbolframework/labbol-cocoon.git</url>
 	<description>
-  		cocoon框架
-  	</description>
+		cocoon框架
+	</description>
 	<developers>
 		<developer>
 			<name>彭飞</name>
@@ -33,6 +33,11 @@
 		<freemarker.version>2.3.28</freemarker.version>
 	</properties>
 	<dependencies>
+		<dependency>
+			<groupId>com.github.yelong0216.dream.first</groupId>
+			<artifactId>dream-first-extjs-base</artifactId>
+			<version>2.0.0</version>
+		</dependency>
 		<dependency>
 			<groupId>com.github.labbolframework</groupId>
 			<artifactId>labbol-core</artifactId>
@@ -212,7 +217,8 @@
 				</snapshotRepository>
 				<repository>
 					<id>yelong</id>
-					<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+					<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/
+					</url>
 				</repository>
 			</distributionManagement>
 		</profile>

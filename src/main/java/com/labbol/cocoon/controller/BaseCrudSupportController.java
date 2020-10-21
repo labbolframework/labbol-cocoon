@@ -18,15 +18,16 @@ import org.yelong.core.model.Modelable;
 import org.yelong.core.model.sql.SqlModel;
 
 import com.github.pagehelper.PageInfo;
-import com.labbol.core.model.BaseModelable;
 import com.labbol.core.queryinfo.QuerySortInfo;
 import com.labbol.core.queryinfo.filter.QueryFilterInfo;
 import com.labbol.core.queryinfo.sort.QuerySortInfos;
 
+import dream.first.base.model.DreamFirstBaseModelable;
+
 /**
  * @author PengFei
  */
-public abstract class BaseCrudSupportController<M extends BaseModelable> extends BaseCocoonCrudController<M> {
+public abstract class BaseCrudSupportController<M extends DreamFirstBaseModelable> extends BaseCocoonCrudController<M> {
 
 	@Override
 	protected void saveModel(M model) throws Exception {
