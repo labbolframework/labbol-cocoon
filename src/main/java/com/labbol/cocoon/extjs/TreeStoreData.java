@@ -3,11 +3,12 @@
  */
 package com.labbol.cocoon.extjs;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author PengFei
- *
  */
 public class TreeStoreData<T> {
 
@@ -34,6 +35,8 @@ public class TreeStoreData<T> {
 	private String extraParam4;
 
 	private transient final T data;
+
+	private Map<String, Object> extendAttributes = new HashMap<>();
 
 	public TreeStoreData() {
 		this(null);
@@ -133,6 +136,18 @@ public class TreeStoreData<T> {
 
 	public T getData() {
 		return data;
+	}
+
+	public void addExtendAttribute(String key, Object value) {
+		this.extendAttributes.put(key, value);
+	}
+
+	public Map<String, Object> getExtendAttributes() {
+		return extendAttributes;
+	}
+
+	public void setExtendAttributes(Map<String, Object> extendAttributes) {
+		this.extendAttributes = extendAttributes;
 	}
 
 }
